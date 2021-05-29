@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
   ],
 };
