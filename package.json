@@ -1,0 +1,29 @@
+{
+  "name": "impulsiona-seguidores",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Impulsiona Seguidores",
+  "author": "MarcosN",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "gatsby": "^3.4.1",
+    "gatsby-plugin-emotion": "^6.6.0",
+    "gatsby-plugin-netlify-cms": "^5.6.0",
+    "gatsby-plugin-react-helmet": "^4.6.0",
+    "netlify-cms-app": "^2.15.11",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  }
+}
