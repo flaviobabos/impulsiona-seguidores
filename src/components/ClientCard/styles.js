@@ -11,7 +11,7 @@ const style = (Component) => styled(Component)`
     line-height: 58px;
     letter-spacing: 0em;
     text-align: center;
-    background: #f2295b;
+    color: #f2295b;
     margin-top: 28px;
   }
 
@@ -44,6 +44,13 @@ const style = (Component) => styled(Component)`
     border-radius: 11px;
     background: #ffffff;
     border: 7px linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
+  }
+
+  .card-border {
+    height: 265px;
+    width: 335px;
+    background: linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
+    border-radius: 11px;
   }
 `;
 

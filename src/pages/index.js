@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <Header/>
-      <ClientCard number={"20097"} name={"CLIENTES"} desc={"Nosso serviço já atingiu a marca de mais de 20 mil clientes ativos espalhados pelo Brasil"}/>
+      <ClientCard number={"20097"} name={"CLIENTES"} desc={["Nosso serviço já atingiu a marca de mais de ",<strong>20 mil clientes</strong>," ativos espalhados pelo Brasil"]}/>
     </>
   )
 }
