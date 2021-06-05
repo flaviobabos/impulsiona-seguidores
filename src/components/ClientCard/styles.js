@@ -43,7 +43,6 @@ const style = (Component) => styled(Component)`
     width: 310px;
     border-radius: 11px;
     background: #ffffff;
-    border: 7px linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
   }
 
   .card-border {

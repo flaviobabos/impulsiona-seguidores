@@ -13,7 +13,7 @@ const Header = ({ className }) => (
         rel="stylesheet"
       ></link>
     </Helmet>
-    <header className={className}>I am a header</header>
+
   </>
 );
 
