@@ -39,16 +39,16 @@ const style = (Component) => styled(Component)`
   }
 
   .card-body-internal {
-    height: 250px;
-    width: 320px;
+    height: 240px;
+    width: 310px;
     border-radius: 11px;
     background: #ffffff;
     border: 7px linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
   }
 
   .card-border {
-    height: 265px;
-    width: 335px;
+    height: 255px;
+    width: 325px;
     background: linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
     border-radius: 11px;
   }
