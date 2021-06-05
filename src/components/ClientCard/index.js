@@ -5,7 +5,7 @@ const ClientCard = ({ className, number, name, desc }) => {
   return (
     <>
       <div className={className}>
-        <div className="card-border flex justify-center items-center">
+        <div className="card-border flex justify-center items-center mb-9">
           <div className="card-body-internal">
             <h1 className="mb-4">{number}</h1>
             <h4 className="mb-4">{name}</h4>

@@ -51,6 +51,7 @@ const style = (Component) => styled(Component)`
     width: 325px;
     background: linear-gradient(180deg, #575ccc 0%, #f2295b 100%);
     border-radius: 11px;
+    filter: drop-shadow(5px 8px 7px rgba(0, 0, 0, 0.25));
   }
 `;
 
