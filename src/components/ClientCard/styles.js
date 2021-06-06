@@ -4,7 +4,7 @@ const style = (Component) => styled(Component)`
   * {
     font-family: Lato;
   }
-  h1 {
+  .texto-vermelho {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
