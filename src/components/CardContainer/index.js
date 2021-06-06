@@ -4,7 +4,7 @@ import style from "./styles";
 
 const CardContainer = () => {
     return (
-        <div className="container">
+        <div className="container mx-auto">
             <div className="flex justify-center items-center flex-col lg:flex-row auto-cols-3">
                 <ClientCard
                     number={"20000"}
