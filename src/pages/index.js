@@ -8,7 +8,7 @@ export default function Index() {
   return (
     <>
       <Header/>
-      <Section altura="h-screen" cor="bg-gradient"/>
+      <Section altura="h-screen" cor="bg-gradient" padding="px-5"/>
       <Footer/>
     </>
   )
