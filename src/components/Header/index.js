@@ -2,6 +2,7 @@ import React from "react";
 import style from "./styles";
 import { Helmet } from "react-helmet";
 import logo from "./imgs/logo.png";
+import logo_desk from "./imgs/logo_desk.png";
 
 const Header = ({ className }) => (
   <>
@@ -15,15 +16,17 @@ const Header = ({ className }) => (
       ></link>
     </Helmet>
     <nav className="h-20 bg-black">
-      <div className="container h-full flex items-center ">
+      <div className="container-fluid h-full flex items-center ">
         <div className="ml-5">
-          <button>
+          <button className="lg:hidden">
             <img alt="logo" className="h-14" src={logo}></img>
+          </button>
+          <button className="hidden lg:block">
+            <img alt="logo" className="h-14" src={logo_desk}></img>
           </button>
         </div>
         <div className="flex w-full justify-end lg:justify-center">
           <button className="mr-5 lg:hidden">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10"
@@ -39,35 +42,36 @@ const Header = ({ className }) => (
               />
             </svg>
           </button>
-          <div className="flex-row hidden lg:flex">
-            <div className={className}>
+          <div className={className}>
+            <div className="flex-row hidden lg:flex">
               <a href="/">
-                <h4 className="flex items-center text-white active:text-green mr-5 active">
+                <h4 className="flex items-center text-white hover:text-green active:text-green mr-8">
                   Inicio
                 </h4>
               </a>
               <a href="sobre">
-                <h4 className="flex items-center text-white active:text-green mr-5">
+                <h4 className="flex items-center text-white hover:text-green mr-8">
                   Sobre Nós
                 </h4>
               </a>
               <a href="beneficios">
-                <h4 className="flex items-center text-white active:text-green mr-5">
+                <h4 className="flex items-center text-white hover:text-green mr-8">
                   Benefícios
                 </h4>
               </a>
               <a href="garantia">
-                <h4 className="flex items-center text-white active:text-green mr-5">
+                <h4 className="flex items-center text-white hover:text-green mr-8">
                   Garantia
                 </h4>
               </a>
               <a href="contato">
-                <h4 className="flex items-center text-white active:text-green mr-5">
+                <h4 className="flex items-center text-white hover:text-green">
                   Contato
                 </h4>
               </a>
             </div>
           </div>
+          <div className="col hidden lg:flex w-56"></div>
         </div>
       </div>
     </nav>
