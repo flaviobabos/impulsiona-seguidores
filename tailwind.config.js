@@ -4,7 +4,18 @@ module.exports = {
     theme: {
         extend: {
             textColor:{
-                'link': '#575CCC'
+                'link': '#575CCC',
+                'black': '#000',
+                'green': '#00CD00',
+                'white': '#FFF'
+            },
+            backgroundColor:{
+                'blue': '#575CCC',
+                'black': "#000",
+                'grey': '#F6F6F6'
+            },
+            backgroundImage:{
+                'gradient' : 'linear-gradient(23.07deg, #575CCC -4.4%, #F2295B 100%);'
             }
         },
     },
