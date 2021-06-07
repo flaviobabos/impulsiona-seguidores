@@ -12,7 +12,7 @@ const Footer = ({ className }) => (
             Impulsiona Seguidores - 2021
           </h5>
           <p className="text-center text-white text-lg mt-2">
-            Desenvolvido por{" "}
+            Desenvolvido por&nbsp;
             <a className="text-link" href="https://articadev.com">
               Artica Dev
             </a>
