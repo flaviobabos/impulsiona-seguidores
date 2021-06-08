@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./styles";
-import warranty from "../../images/warranty.png";
 
 const sectionWarranty = ({ className }) => {
     return (
