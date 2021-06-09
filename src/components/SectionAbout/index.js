@@ -11,19 +11,19 @@ const sectionWarranty = ({ className }) => {
                     <p className="text-white mt-5 normal">Não se preocupe pois a quantidade de seguidores e curtidas é garantida durante toda a assinatura.</p>
                     <p className="text-white mt-5 normal pb-10">E, o melhor de tudo, você vai ter todos os benefícios da Impulsiona Seguidores</p>
                     <div className="flex mb-3 lg:justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                         <p className="text-white ml-2">Sem precisar <strong className="text-white">seguir de volta</strong></p>
                     </div>
                     <div className="flex mb-3 lg:justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                         <p className="text-white ml-2">Sem precisar <strong className="text-white">informar sua senha</strong> do Instagram</p>
                     </div>
                     <div className="flex mb-10 lg:justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                         <p className="text-white ml-2">Sem precisar <strong className="text-white">ficar online</strong> o dia todo</p>
                     </div>
                     <div className="container lg:px-30 xl:px-40">
-                        <iframe className="mx-auto" width="100%" height="350px" src="https://www.youtube.com/embed/XxeOdkmAgYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe className="mx-auto" width="100%" height="350px" src="https://www.youtube.com/embed/XxeOdkmAgYY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </section>
             </div>
