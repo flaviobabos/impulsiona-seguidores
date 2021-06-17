@@ -14,7 +14,6 @@ export default function Index() {
         <Layout>
             <Header />
             <CardContainer />
-
             <SectionAbout />
             <SectionWarranty />
             <SectionContact />
