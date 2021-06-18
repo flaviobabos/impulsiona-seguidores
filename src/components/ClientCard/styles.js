@@ -1,12 +1,8 @@
 import styled from "@emotion/styled";
 
 const style = (Component) => styled(Component)`
-  * {
-    font-family: Lato;
-  }
   .texto-vermelho {
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 58px;
     letter-spacing: 0em;
@@ -17,7 +13,6 @@ const style = (Component) => styled(Component)`
 
   h4 {
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0em;
@@ -28,9 +23,7 @@ const style = (Component) => styled(Component)`
   }
 
   p {
-    font-family: Lato;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
