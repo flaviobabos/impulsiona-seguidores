@@ -7,7 +7,7 @@ const sectionContact = ({ className }) => {
     return (
         <>
             <div className={className}>
-                <section className="h-full w-full bg-grey px-10 lg:px-52 pb-36" >
+                <section className="h-full w-full contact bg-grey px-10 lg:px-52 pb-36" >
                     <h3 className="titulo text-black block mx-auto pt-10 mb-12">Entre<strong className="titulo-strong">&nbsp;em contato conosco</strong></h3>
                     <div className="flex row justify-center px-10">
                         <button><a rel="noreferrer" target="_blank" href="https://web.whatsapp.com/send?phone=5544998433415&text=">
