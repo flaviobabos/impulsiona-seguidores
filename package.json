@@ -24,10 +24,10 @@
     "gatsby-plugin-react-helmet": "^4.6.0",
     "netlify-cms-app": "^2.15.11",
     "react": "^17.0.1",
-    "react-animated-css": "^1.2.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-scroll": "^1.8.2"
+    "react-scroll": "^1.8.2",
+    "react-spring": "^9.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

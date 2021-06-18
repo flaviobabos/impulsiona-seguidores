@@ -5,18 +5,14 @@ import logo from "../../images/logo.png";
 import logo_desk from "../../images/logo_desk.png";
 import { ThreeLineHorizontal } from 'akar-icons';
 import { Link } from 'react-scroll';
-import { Animated } from "react-animated-css";
+import { useSpring, animated } from 'react-spring'
+
 
 
 const Header = ({ className }) => {
     const [check, setCheck] = useState(false);
+    const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
 
-    function botao(check) {
-        let inverse = !check;
-        setCheck(inverse);
-        console.log('oi')
-    }
-    
     return (
         <>
             <Helmet>
@@ -39,30 +35,31 @@ const Header = ({ className }) => {
                         </button>
                     </div>
                     <div className="flex w-full justify-end lg:justify-center">
-                        <button className="mr-5 lg:hidden" onClick={()=>setCheck(!check)}>
+                        <button className="mr-5 lg:hidden" onClick={() => setCheck(!check)}>
                             <ThreeLineHorizontal color={"#00CD00"} size={40} />
                         </button>
                         <div className={className}>
-                            <div className="flex-row hidden lg:flex">
-                                <Link activeClass="active" className="flex items-center text-white hover:text-green text active:text-green mr-8" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
-                                <Link activeClass="active" className="flex items-center text-white hover:text-green text  active:text-green mr-8" to="about" spy={true} smooth={true} duration={500} offset={-70} >Sobre Nós</Link>
-                                <Link activeClass="active" className="flex items-center text-white hover:text-green text active:text-green mr-8" to="benefits" spy={true} smooth={true} duration={500} offset={-70} >Benefícios</Link>
-                                <Link activeClass="active" className="flex items-center text-white hover:text-green  text active:text-green mr-8" to="warranty" spy={true} smooth={true} duration={500} offset={-70} >Garantia</Link>
-                                <Link activeClass="active" className="flex items-center text-white hover:text-green  text active:text-green" to="contact" spy={true} smooth={true} duration={500} offset={-70}>Contato</Link>
-                            </div>
+                            {check &&
+                                <animated.div style={props}>
+                                    <div className="flex-row hidden lg:flex">
+                                        <Link activeClass="active" className="flex items-center text-white hover:text-green text active:text-green mr-8" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
+                                        <Link activeClass="active" className="flex items-center text-white hover:text-green text  active:text-green mr-8" to="about" spy={true} smooth={true} duration={500} offset={-80} >Sobre Nós</Link>
+                                        <Link activeClass="active" className="flex items-center text-white hover:text-green text active:text-green mr-8" to="benefits" spy={true} smooth={true} duration={500} offset={-80} >Benefícios</Link>
+                                        <Link activeClass="active" className="flex items-center text-white hover:text-green  text active:text-green mr-8" to="warranty" spy={true} smooth={true} duration={500} offset={-80} >Garantia</Link>
+                                        <Link activeClass="active" className="flex items-center text-white hover:text-green  text active:text-green" to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contato</Link>
+                                    </div>
+                                </animated.div>}
                         </div>
                         <div className="col hidden lg:flex w-56"></div>
                     </div>
                 </div>
-                <Animated animationIn="bounceInDown" animationOut="bounceOutUp" animationInDuration={1000} animationOutDuration={1000} isVisible={check}>
-                    <div className="flex-col bg-black lg:hidden">
-                        <Link activeClass="active" className="flex cursor-pointer justify-center items-center text-white hover:text-green text-lg active:text-green mb-2" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
-                        <Link activeClass="active" className="flex cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="about" spy={true} smooth={true} duration={500} offset={-70} >Sobre Nós</Link>
-                        <Link activeClass="active" className="flex cursor-pointer   justify-center items-center text-white hover:text-green text-lg	active:text-green mb-2 " to="benefits" spy={true} smooth={true} duration={500} offset={-70} >Benefícios</Link>
-                        <Link activeClass="active" className="flex  cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="warranty" spy={true} smooth={true} duration={500} offset={-70} >Garantia</Link>
-                        <Link activeClass="active" className="flex cursor-pointer  justify-center  items-center text-white hover:text-green text-lg	 active:text-green pb-2" to="contact" spy={true} smooth={true} duration={500} offset={-70}>Contato</Link>
-                    </div>
-                </Animated>
+                <div className={`flex-col bg-black lg:hidden ${check ? "" : ""} `}>
+                    <Link activeClass="active" className="flex cursor-pointer justify-center items-center text-white hover:text-green text-lg active:text-green mb-2" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
+                    <Link activeClass="active" className="flex cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="about" spy={true} smooth={true} duration={500} offset={-80} >Sobre Nós</Link>
+                    <Link activeClass="active" className="flex cursor-pointer   justify-center items-center text-white hover:text-green text-lg	active:text-green mb-2 " to="benefits" spy={true} smooth={true} duration={500} offset={-80} >Benefícios</Link>
+                    <Link activeClass="active" className="flex  cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="warranty" spy={true} smooth={true} duration={500} offset={-80} >Garantia</Link>
+                    <Link activeClass="active" className="flex cursor-pointer  justify-center  items-center text-white hover:text-green text-lg	 active:text-green pb-2" to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contato</Link>
+                </div>
             </nav>
         </>)
 };
