@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 import { Animated } from "react-animated-css";
 
 
-function Header(className) {
+const Header = ({ className }) => {
     const [check, setCheck] = useState(false);
 
     function botao(check) {
@@ -16,6 +16,7 @@ function Header(className) {
         setCheck(inverse);
         console.log('oi')
     }
+    
     return (
         <>
             <Helmet>
@@ -38,7 +39,7 @@ function Header(className) {
                         </button>
                     </div>
                     <div className="flex w-full justify-end lg:justify-center">
-                        <button className="mr-5 lg:hidden" onClick={setCheck(!check)}>
+                        <button className="mr-5 lg:hidden" onClick={()=>setCheck(!check)}>
                             <ThreeLineHorizontal color={"#00CD00"} size={40} />
                         </button>
                         <div className={className}>
