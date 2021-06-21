@@ -11,7 +11,8 @@ import { useSpring, animated } from 'react-spring'
 
 const Header = ({ className }) => {
     const [check, setCheck] = useState(false);
-    let props = useSpring({ to: { height: 190, opacity: 1 }, from: { height: 0, opacity: 0 }, reset: true })
+    let props = useSpring({ from: { height: 0, opacity: 0 }, to: { height: 190, opacity: 1 }, reset: true })
+    let volta = useSpring({ from: { height: 0, opacity: 0 }, to: { height: 190, opacity: 1 }, reset: true, reverse: true })
 
     return (
         <>
@@ -50,15 +51,13 @@ const Header = ({ className }) => {
                         <div className="col hidden lg:flex w-56"></div>
                     </div>
                 </div>
-                {check &&
-                    <animated.div className={`flex-col bg-black lg:hidden ${check ? "" : "hidden"} `} style={props}>
-                        <Link activeClass="active" className="flex cursor-pointer justify-center items-center text-white hover:text-green text-lg active:text-green mb-2" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
-                        <Link activeClass="active" className="flex cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="about" spy={true} smooth={true} duration={500} offset={-80} >Sobre Nós</Link>
-                        <Link activeClass="active" className="flex cursor-pointer   justify-center items-center text-white hover:text-green text-lg	active:text-green mb-2 " to="benefits" spy={true} smooth={true} duration={500} offset={-80} >Benefícios</Link>
-                        <Link activeClass="active" className="flex  cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="warranty" spy={true} smooth={true} duration={500} offset={-80} >Garantia</Link>
-                        <Link activeClass="active" className="flex cursor-pointer  justify-center  items-center text-white hover:text-green text-lg	 active:text-green pb-2" to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contato</Link>
-                    </animated.div>}
-
+                <animated.div className={`flex-col bg-black lg:hidden`} style={check ? props : volta}>
+                    <Link activeClass="active" className="flex cursor-pointer justify-center items-center text-white hover:text-green text-lg active:text-green mb-2" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
+                    <Link activeClass="active" className="flex cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="about" spy={true} smooth={true} duration={500} offset={-80} >Sobre Nós</Link>
+                    <Link activeClass="active" className="flex cursor-pointer   justify-center items-center text-white hover:text-green text-lg	active:text-green mb-2 " to="benefits" spy={true} smooth={true} duration={500} offset={-80} >Benefícios</Link>
+                    <Link activeClass="active" className="flex  cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="warranty" spy={true} smooth={true} duration={500} offset={-80} >Garantia</Link>
+                    <Link activeClass="active" className="flex cursor-pointer  justify-center  items-center text-white hover:text-green text-lg	 active:text-green pb-2" to="contact" spy={true} smooth={true} duration={500} offset={-80}>Contato</Link>
+                </animated.div>
             </nav>
         </>)
 };
