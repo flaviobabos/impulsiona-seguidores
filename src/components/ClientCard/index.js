@@ -14,7 +14,8 @@ const ClientCard = ({ className, number, name, desc, key }) => {
                                 end={numero}
                                 duration={3}
                                 suffix={"+"}
-                                className={"texto-vermelho"} />
+                                className={"texto-vermelho"}
+                                key={key} />
                         </div>
                         <h4 className="mb-4">{name}</h4>
                         <p className="px-6">{desc}</p>
