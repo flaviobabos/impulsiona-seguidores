@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import SectionWarranty from '../components/SectionWarranty'
 import SectionAbout from '../components/SectionAbout'
 import SectionContact from '../components/SectionContact'
+import CardContainer from "../components/CardContainer";
 import SectionBenefits from '../components/SectionBenefits'
 
 export default function Index() {
@@ -13,6 +14,7 @@ export default function Index() {
     return (
         <Layout>
             <Header />
+            <CardContainer />
             <SectionAbout />
             <SectionBenefits />
             <SectionWarranty />
@@ -21,4 +23,3 @@ export default function Index() {
         </Layout>
     )
 }
-
