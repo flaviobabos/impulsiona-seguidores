@@ -1,19 +1,19 @@
 import React from "react";
 import style from "./styles";
-import warranty from "../../images/warranty.png";
+import logo from "../../images/logo_desk.png";
 import CardContainer from "../../components/CardContainer";
 import HomeCard from "../../components/HomeCard";
 
 
-const sectionWarranty = ({ className }) => {
+const sectionHome = ({ className }) => {
     return (
         <>
             <div className={className}>
-                <section className="h-full w-full bg-grey px-10 lg:px-52" >
+                <section className="h-full w-full bg-grey px-10 lg:px-52 home" >
                     <img
-                        className="flex lg:hidden mx-auto h-48 mb-10"
-                        src={warranty}
-                        alt="7 dias de garantia"
+                        className="flex pt-7 lg:hidden mx-auto h-24"
+                        src={logo}
+                        alt="logo original"
                     ></img>
                     <h3 className="titulo text-black block mx-auto pt-6 mb-5">Seguidores<strong className="titulo-strong text-green">&nbsp;Reais</strong> e<strong className="titulo-strong text-green">&nbsp;Brasileiros</strong></h3>
                     <HomeCard />
@@ -27,4 +27,4 @@ const sectionWarranty = ({ className }) => {
     );
 };
 
-export default style(sectionWarranty);
+export default style(sectionHome);
