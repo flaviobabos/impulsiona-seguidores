@@ -5,7 +5,7 @@ const sectionWarranty = ({ className }) => {
     return (
         <>
             <div className={className}>
-                <section className="h-full w-full bg-gradient px-10 lg:px-52 pb-5" >
+                <section className="h-full w-full bg-gradient px-10 lg:px-52 pb-5 about" >
                     <h3 className="titulo text-white block mx-auto pt-6 mb-5">O que <strong className="titulo-strong text-green">nosso sistema</strong> fará por <strong className="titulo-strong text-green">você?</strong></h3>
                     <p className="text-white mt-10 normal">Após o processamento de sua compra, seu perfil imediatamente irá atrair mais pessoas, lhe dando ainda mais interações e engajamento.</p>
                     <p className="text-white mt-5 normal">Não se preocupe pois a quantidade de seguidores e curtidas é garantida durante toda a assinatura.</p>

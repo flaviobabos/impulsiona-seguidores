@@ -13,8 +13,8 @@ export default function Index() {
 
     return (
         <Layout>
-            <SectionHome />
             <Header />
+            <SectionHome />
             <SectionAbout />
             <SectionBenefits />
             <SectionWarranty />
