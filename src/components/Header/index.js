@@ -10,16 +10,16 @@ import { useSpring, animated, useSpringRef, useChain } from 'react-spring'
 
 
 const Header = ({ className }) => {
-    const [check, setCheck] = useState(false);
+    const [showMenu, setshowMenu] = useState(false);
 
     const springApi = useSpringRef();
 
-    let props = useSpring({ ref: springApi, from: { height: 0, opacity: 0 }, to: { height: check ? 190 : 0, opacity: check ? 1 : 0 } })
+    let props = useSpring({ ref: springApi, from: { height: 0, opacity: 0 }, to: { height: showMenu ? 190 : 0, opacity: showMenu ? 1 : 0 } })
 
     const transApi = useSpringRef();
 
 
-    useChain(check ? [springApi, transApi] : [transApi, springApi], [
+    useChain(showMenu ? [springApi, transApi] : [transApi, springApi], [
         0
     ]);
 
@@ -45,7 +45,7 @@ const Header = ({ className }) => {
                         </button>
                     </div>
                     <div className="flex w-full justify-end lg:justify-center">
-                        <button className="mr-5 lg:hidden" onClick={() => setCheck(!check)}>
+                        <button className="mr-5 lg:hidden" onClick={() => setshowMenu(!showMenu)}>
                             <ThreeLineHorizontal color={"#00CD00"} size={40} />
                         </button>
                         <div className={className}>
@@ -61,7 +61,7 @@ const Header = ({ className }) => {
                     </div>
                 </div>
                 <animated.div className={`flex-col bg-black lg:hidden`} style={props}>
-                    {check &&
+                    {showMenu &&
                         <>
                             <Link activeClass="active" className="flex cursor-pointer justify-center items-center text-white hover:text-green text-lg active:text-green mb-2" to="home" spy={true} smooth={true} duration={500} >Inicio</Link>
                             <Link activeClass="active" className="flex cursor-pointer  justify-center items-center text-white hover:text-green text-lg	 active:text-green mb-2" to="about" spy={true} smooth={true} duration={500} offset={-80} >Sobre Nós</Link>
