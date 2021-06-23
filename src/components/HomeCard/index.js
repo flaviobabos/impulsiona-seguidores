@@ -8,6 +8,9 @@ const HomeCard = ({ className }) => {
     let titles = ["No que podemos te ajudar?", "De quantos seguidores você precisa?", "De quantas curtidas você precisa?", "De quantas curtidas e seguidores você precisa?"];
     let followers = ["1000", "1500", "3000", "6000"]
     let likes = ["25", "50", "100", "200"]
+    let followersprices = ["55,90", "75,90", "145,90", "279,90"]
+    let likesprices = ["25,90", "45,90", "84,90", "159,90"]
+    let combosprices = ["89,90", "125,90", "249,90", "489,90"]
     let linksfollower = ["http://mon.net.br/17s8xk", "http://mon.net.br/17s8xl", "http://mon.net.br/17s8xm", "http://mon.net.br/17s8xn"]
     let linkslikes = ["http://mon.net.br/17s8xv", "http://mon.net.br/17s8xx", "http://mon.net.br/17s8y0", "http://mon.net.br/17s8y1"]
     let linkscombos = ["http://mon.net.br/17s8y3", "http://mon.net.br/17s8y4", "http://mon.net.br/17s8y5", "http://mon.net.br/17s8y7"]
@@ -53,7 +56,17 @@ const HomeCard = ({ className }) => {
                                     }}
                                     onChange={({ x }) => setState(valor => ({ ...valor, x }))}
                                 />
-                                <div className="mt-2">
+                                <div className="flex flex-row mt-6">
+                                    <h6 className="flex items-center mr-2">R$
+</h6>
+                                    <h3 className="flex items-center">
+                                        {followersprices[valor.x]}
+                                    </h3>
+
+                                    <h6 className="flex items-end">/Mês
+</h6>
+                                </div>
+                                <div>
                                     <div className="flex mt-7 mb-2 items-center ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                                         <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
@@ -112,7 +125,17 @@ const HomeCard = ({ className }) => {
                                     }}
                                     onChange={({ x }) => setState(valor => ({ ...valor, x }))}
                                 />
-                                <div className="mt-2">
+                                <div className="flex flex-row mt-6">
+                                    <h6 className="flex items-center mr-2">R$
+</h6>
+                                    <h3 className="flex items-center">
+                                        {likesprices[valor.x]}
+                                    </h3>
+
+                                    <h6 className="flex items-end">/Mês
+</h6>
+                                </div>
+                                <div>
                                     <div className="flex mt-7 mb-2 items-center ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                                         <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
@@ -171,7 +194,17 @@ const HomeCard = ({ className }) => {
                                     }}
                                     onChange={({ x }) => setState(valor => ({ ...valor, x }))}
                                 />
-                                <div className="mt-2">
+                                <div className="flex flex-row mt-6">
+                                    <h6 className="flex items-center mr-2">R$
+</h6>
+                                    <h3 className="flex items-center">
+                                        {combosprices[valor.x]}
+                                    </h3>
+
+                                    <h6 className="flex items-end">/Mês
+</h6>
+                                </div>
+                                <div>
                                     <div className="flex mt-7 mb-2 items-center ">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
                                         <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>

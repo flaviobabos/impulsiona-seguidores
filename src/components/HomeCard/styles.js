@@ -47,6 +47,24 @@ letter-spacing: 0em;
 
 }
 
+h3{
+    color: #717171;
+font-size: 40px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: left;
+}
+h6{
+    color: #717171;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
 p{
 
 
@@ -58,7 +76,7 @@ letter-spacing: 0em;
 }
 
 .card-increase{
-    height: 650px;
+    height: 700px;
     transition: 0.5s;
 }
 
