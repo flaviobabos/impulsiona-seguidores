@@ -7,7 +7,8 @@ module.exports = {
                 'link': '#575CCC',
                 'black': '#000',
                 'green': '#00CD00',
-                'white': '#FFF'
+                'white': '#FFF',
+                'pink': '#F2295B'
             },
             backgroundColor: {
                 'blue': '#575CCC',
