@@ -76,8 +76,15 @@ letter-spacing: 0em;
 }
 
 .card-increase{
-    height: 700px;
+    height: 100%;
     transition: 0.5s;
+}
+
+@media (min-width:768px){
+    .card-increase{
+    height:100%;
+    width:620px;
+    transition:0.5s;}
 }
 
 .btn-inverse{
