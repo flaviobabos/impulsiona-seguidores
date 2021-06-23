@@ -48,16 +48,16 @@ letter-spacing: 0em;
 }
 
 h3{
-    color: #717171;
-font-size: 40px;
+    color: #717171!important;
+font-size: 40px!important;
 font-weight: 700;
 line-height: 58px;
 letter-spacing: 0em;
 text-align: left;
 }
 h6{
-    color: #717171;
-font-size: 14px;
+    color: #717171!important;
+font-size: 14px!important;
 font-weight: 700;
 line-height: 17px;
 letter-spacing: 0em;
