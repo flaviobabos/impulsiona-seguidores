@@ -8,6 +8,7 @@ width: 300px;
 background: #FFFFFF;
 border-radius: 11px;
 filter: drop-shadow(4px 11px 10px rgba(0, 0, 0, 0.125));
+transition: 0.5s;
 }
 
 h2{
