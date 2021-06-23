@@ -37,12 +37,15 @@ const Header = ({ className }) => {
             <nav className="h-20 bg-black sticky top-0 z-10">
                 <div className="container-fluid h-full flex items-center ">
                     <div className="ml-5">
-                        <button className="lg:hidden">
-                            <img alt="logo" className="h-14" src={logo}></img>
-                        </button>
-                        <button className="hidden lg:block">
-                            <img alt="logo" className="h-14" src={logo_desk}></img>
-                        </button>
+                        <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} offset={-80} >
+                            <button className="lg:hidden">
+                                <img alt="logo" className="h-14" src={logo}></img>
+                            </button>
+                            <button className="hidden lg:block">
+                                <img alt="logo" className="h-14" src={logo_desk}></img>
+                            </button>
+
+                        </Link>
                     </div>
                     <div className="flex w-full justify-end lg:justify-center">
                         <button className="mr-5 lg:hidden" onClick={() => setshowMenu(!showMenu)}>
