@@ -332,7 +332,7 @@ const HomeCard = ({ className }) => {
                     <strong className="text-link">qualquer momento</strong>
                   </p>
                 </div>
-                <div className="flex mb-6 mt-6 items-center">
+                <div className="flex mb-3 mt-4 items-center">
                   <p className="text-link ml-2 texto">
                     <strong className="text-pink">Atenção:</strong> Seu{" "}
                     <strong className="text-pink">perfil</strong> precisa estar{" "}
@@ -342,7 +342,7 @@ const HomeCard = ({ className }) => {
               </>
             )}
             {actualTitle === products[0].titles[1] && (
-              <div className="flex justify-center items-center flex-col mt-10">
+              <div className="flex justify-center items-center flex-col mt-5">
                 <a href={products[1].followerslinks[valor.x]}>
                   <button className="btn text-white mb-5">Contratar</button>
                 </a>
@@ -355,7 +355,7 @@ const HomeCard = ({ className }) => {
               </div>
             )}
             {actualTitle === products[0].titles[2] && (
-              <div className="flex justify-center items-center flex-col mt-10">
+              <div className="flex justify-center items-center flex-col mt-5">
                 <a href={products[2].linkslikes[valor.x]}>
                   <button className="btn text-white mb-5">Contratar</button>
                 </a>
@@ -368,7 +368,7 @@ const HomeCard = ({ className }) => {
               </div>
             )}
             {actualTitle === products[0].titles[3] && (
-              <div className="flex justify-center items-center flex-col mt-10">
+              <div className="flex justify-center items-center flex-col mt-5">
                 <a href={products[3].linkscombos[valor.x]}>
                   <button className="btn text-white mb-5">Contratar</button>
                 </a>
