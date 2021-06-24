@@ -44,7 +44,6 @@ const HomeCard = ({ className }) => {
       ],
     },
   ];
-  console.log(products[1].followers[0]);
 
   let [actualTitle, setTitle] = useState(products[0].titles[0]);
   return (
@@ -55,7 +54,7 @@ const HomeCard = ({ className }) => {
             actualTitle === products[0].titles[0] ? "" : "card-increase"
           }`}
         >
-          <div className="bg-blue block top-0 rounded-t-lg w-full h-20">
+          <div className="bg-blue block top-0 rounded-t-lg w-full h-20 mb-5">
             <h2
               className={`text-white px-4 text-center ${
                 actualTitle === products[0].titles[0] ? "pt-6" : "pt-3 lg:pt-6"
@@ -94,142 +93,130 @@ const HomeCard = ({ className }) => {
 
             {actualTitle === products[0].titles[1] && (
               <>
-                <div className="lg:grid lg:grid-cols-2 lg:items-center">
-                  <div className="flex flex-col justify-center items-center">
-                    <h4 className="text-link">
-                      {products[1].followers[valor.x] + " seguidores por mês"}
-                    </h4>
-                    <Slider
-                      className="mt-10"
-                      axis="x"
-                      xstep={1}
-                      xmin={0}
-                      xmax={3}
-                      x={valor.x}
-                      styles={{
-                        track: {
-                          backgroundColor: "#ECECEC",
-                        },
-                        active: {
-                          backgroundColor: "#F2295B",
-                        },
-                        thumb: {
-                          width: 25,
-                          height: 25,
-                          opacity: 1,
-                          background: "#F2295B",
-                        },
-                      }}
-                      onChange={({ x }) =>
-                        setState((valor) => ({ ...valor, x }))
-                      }
-                    />
-                    <div className="flex flex-row mt-6 lg:ml-6">
-                      <h6 className="flex items-center mr-2">R$</h6>
-                      <h3 className="flex items-center">
-                        {products[1].followersprices[valor.x]}
-                      </h3>
+                <div className="flex flex-col justify-center items-center">
+                  <h4 className="text-link">
+                    {products[1].followers[valor.x] + " seguidores por mês"}
+                  </h4>
+                  <Slider
+                    className="mt-10"
+                    axis="x"
+                    xstep={1}
+                    xmin={0}
+                    xmax={3}
+                    x={valor.x}
+                    styles={{
+                      track: {
+                        backgroundColor: "#ECECEC",
+                      },
+                      active: {
+                        backgroundColor: "#F2295B",
+                      },
+                      thumb: {
+                        width: 25,
+                        height: 25,
+                        opacity: 1,
+                        background: "#F2295B",
+                      },
+                    }}
+                    onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
+                  />
+                  <div className="flex flex-row mt-6 lg:ml-6">
+                    <h6 className="flex items-center mr-2">R$</h6>
+                    <h3 className="flex items-center">
+                      {products[1].followersprices[valor.x]}
+                    </h3>
 
-                      <h6 className="flex items-end">/Mês</h6>
-                    </div>
+                    <h6 className="flex items-end">/Mês</h6>
                   </div>
                 </div>
               </>
             )}
             {actualTitle === products[0].titles[2] && (
-              <>
-                <div className="lg:grid lg:grid-cols-2 lg:items-center">
-                  <div className="flex flex-col justify-center items-center">
-                    <h4 className="text-link">
-                      {products[2].likes[valor.x] + " curtidas por mês"}
-                    </h4>
-                    <Slider
-                      className="mt-10"
-                      axis="x"
-                      xstep={1}
-                      xmin={0}
-                      xmax={3}
-                      x={valor.x}
-                      styles={{
-                        track: {
-                          backgroundColor: "#ECECEC",
-                        },
-                        active: {
-                          backgroundColor: "#F2295B",
-                        },
-                        thumb: {
-                          width: 25,
-                          height: 25,
-                          opacity: 1,
-                          background: "#F2295B",
-                        },
-                      }}
-                      onChange={({ x }) =>
-                        setState((valor) => ({ ...valor, x }))
-                      }
-                    />
-                    <div className="flex flex-row mt-6 lg:ml-6">
-                      <h6 className="flex items-center mr-2">R$</h6>
-                      <h3 className="flex items-center">
-                        {products[2].likesprices[valor.x]}
-                      </h3>
+              <div>
+                <div className="flex flex-col justify-center items-center">
+                  <h4 className="text-link">
+                    {products[2].likes[valor.x] + " curtidas por mês"}
+                  </h4>
+                  <Slider
+                    className="mt-10"
+                    axis="x"
+                    xstep={1}
+                    xmin={0}
+                    xmax={3}
+                    x={valor.x}
+                    styles={{
+                      track: {
+                        backgroundColor: "#ECECEC",
+                      },
+                      active: {
+                        backgroundColor: "#F2295B",
+                      },
+                      thumb: {
+                        width: 25,
+                        height: 25,
+                        opacity: 1,
+                        background: "#F2295B",
+                      },
+                    }}
+                    onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
+                  />
+                  <div className="flex flex-row mt-6 lg:ml-6">
+                    <h6 className="flex items-center mr-2">R$</h6>
+                    <h3 className="flex items-center">
+                      {products[2].likesprices[valor.x]}
+                    </h3>
 
-                      <h6 className="flex items-end">/Mês</h6>
-                    </div>
+                    <h6 className="flex items-end">/Mês</h6>
                   </div>
                 </div>
-              </>
+              </div>
             )}
             {actualTitle === products[0].titles[3] && (
               <>
-                <div className="lg:grid lg:grid-cols-2 lg:items-center">
-                  <div className="flex flex-col justify-center items-center">
-                    <h4 className="text-link text-center px-5">
-                      {products[1].followers[valor.x] +
-                        " seguidores e " +
-                        products[2].likes[valor.x] +
-                        " curtidas por mês"}
-                    </h4>
-                    <Slider
-                      className="mt-10"
-                      axis="x"
-                      xstep={1}
-                      xmin={0}
-                      xmax={3}
-                      x={valor.x}
-                      styles={{
-                        track: {
-                          backgroundColor: "#ECECEC",
-                        },
-                        active: {
-                          backgroundColor: "#F2295B",
-                        },
-                        thumb: {
-                          width: 25,
-                          height: 25,
-                          opacity: 1,
-                          background: "#F2295B",
-                        },
-                      }}
-                      onChange={({ x }) =>
-                        setState((valor) => ({ ...valor, x }))
-                      }
-                    />
-                    <div className="flex flex-row mt-6">
-                      <h6 className="flex items-center mr-2">R$</h6>
-                      <h3 className="flex items-center">
-                        {products[3].combosprices[valor.x]}
-                      </h3>
+                <div className="flex flex-col justify-center items-center">
+                  <h4 className="text-link text-center px-5">
+                    {products[1].followers[valor.x] +
+                      " seguidores e " +
+                      products[2].likes[valor.x] +
+                      " curtidas por mês"}
+                  </h4>
+                  <Slider
+                    className="mt-10"
+                    axis="x"
+                    xstep={1}
+                    xmin={0}
+                    xmax={3}
+                    x={valor.x}
+                    styles={{
+                      track: {
+                        backgroundColor: "#ECECEC",
+                      },
+                      active: {
+                        backgroundColor: "#F2295B",
+                      },
+                      thumb: {
+                        width: 25,
+                        height: 25,
+                        opacity: 1,
+                        background: "#F2295B",
+                      },
+                    }}
+                    onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
+                  />
+                  <div className="flex flex-row mt-6">
+                    <h6 className="flex items-center mr-2">R$</h6>
+                    <h3 className="flex items-center">
+                      {products[3].combosprices[valor.x]}
+                    </h3>
 
-                      <h6 className="flex items-end">/Mês</h6>
-                    </div>
+                    <h6 className="flex items-end">/Mês</h6>
                   </div>
                 </div>
               </>
             )}
             {actualTitle !== products[0].titles[0] && (
               <>
-                <div className="flex mt-7 mb-2 items-center ">
+                <div className="flex mt-7 mb-2 items-start ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
