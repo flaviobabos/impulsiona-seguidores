@@ -72,26 +72,26 @@ const HomeCard = ({ className }) => {
                                     <div>
                                         <div className="flex mt-7 mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
+                                            <p className="text-link ml-2 texto">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
+                                            <p className="text-link ml-2 texto">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Reposição <strong className="text-link">automática</strong> de seguidores</p>
+                                            <p className="text-link ml-2 texto">Reposição <strong className="text-link">automática</strong> de seguidores</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
+                                            <p className="text-link ml-2 texto">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
+                                            <p className="text-link ml-2 texto">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
                                         </div>
                                         <div className="flex mb-6 mt-6 items-center">
-                                            <p className="text-link ml-2"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
+                                            <p className="text-link ml-2 texto"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
                                         </div>
                                         <div className="flex justify-center items-center flex-col mt-10">
                                             <a href={linksfollower[valor.x]}>
@@ -145,26 +145,26 @@ const HomeCard = ({ className }) => {
                                     <div>
                                         <div className="flex mt-7 mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
+                                            <p className="text-link ml-2 texto">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
+                                            <p className="text-link ml-2 texto">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Reposição <strong className="text-link">automática</strong> de seguidores</p>
+                                            <p className="text-link ml-2 texto">Reposição <strong className="text-link">automática</strong> de seguidores</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
+                                            <p className="text-link ml-2 texto">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
+                                            <p className="text-link ml-2 texto">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
                                         </div>
                                         <div className="flex mb-6 mt-6 items-center">
-                                            <p className="text-link ml-2"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
+                                            <p className="text-link ml-2 texto"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
                                         </div>
                                         <div className="flex justify-center items-center flex-col mt-10">
                                             <a href={linkslikes[valor.x]}>
@@ -218,26 +218,26 @@ const HomeCard = ({ className }) => {
                                     <div className="flex flex-col items-center">
                                         <div className="flex mt-7 mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
+                                            <p className="text-link ml-2 texto">Seguidores <strong className="text-link">Reais</strong> e <strong className="text-link">Brasileiros</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
+                                            <p className="text-link ml-2 texto">Quantidade <strong className="text-link">garantida</strong> na assinatura</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Reposição <strong className="text-link">automática</strong> de seguidores</p>
+                                            <p className="text-link ml-2 texto">Reposição <strong className="text-link">automática</strong> de seguidores</p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
+                                            <p className="text-link ml-2 texto">Atendimento via <strong className="text-link">e-mail</strong> e <strong className="text-link">WhatsApp</strong></p>
                                         </div>
                                         <div className="flex mb-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00CD00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" display="block" id="DoubleCheck"><path d="M2 12l5.25 5 2.625-3" /><path d="M8 12l5.25 5L22 7" /><path d="M16 7l-3.5 4" /></svg>
-                                            <p className="text-link ml-2">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
+                                            <p className="text-link ml-2 texto">Cancelamento a <strong className="text-link">qualquer momento</strong></p>
                                         </div>
                                         <div className="flex mb-6 mt-6 items-center">
-                                            <p className="text-link ml-2"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
+                                            <p className="text-link ml-2 texto"><strong className="text-pink">Atenção:</strong> Seu <strong className="text-pink">perfil</strong> precisa estar <strong className="text-pink">público</strong></p>
                                         </div>
                                         <div className="flex justify-center items-center flex-col mt-10">
                                             <a href={linkscombos[valor.x]}>

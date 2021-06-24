@@ -48,16 +48,16 @@ letter-spacing: 0em;
 }
 
 h3{
-    color: #717171!important;
-font-size: 40px!important;
+    color: #717171;
+font-size: 40px;
 font-weight: 700;
 line-height: 58px;
 letter-spacing: 0em;
 text-align: left;
 }
 h6{
-    color: #717171!important;
-font-size: 14px!important;
+    color: #717171;
+font-size: 14px;
 font-weight: 700;
 line-height: 17px;
 letter-spacing: 0em;
@@ -65,14 +65,11 @@ text-align: left;
 
 }
 
-p{
-
-
-font-size: 14px!important;
+.texto{
+font-size: 14px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: 0em;
-
 }
 
 .card-increase{
