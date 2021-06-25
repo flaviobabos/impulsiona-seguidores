@@ -12,7 +12,7 @@ const style = (Component) => styled(Component)`
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 18px!important;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0em;
@@ -23,7 +23,7 @@ const style = (Component) => styled(Component)`
   }
 
   p {
-    font-size: 18px;
+    font-size: 18px!important;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;

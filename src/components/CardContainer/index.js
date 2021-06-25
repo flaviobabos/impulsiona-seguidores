@@ -5,7 +5,7 @@ import style from "./styles";
 const CardContainer = ({ className }) => {
     return (
         <div className={className}>
-            <div className="mx-auto mb-6">
+            <div className="mx-auto pb-6">
                 <h1 className="mx-auto mb-5 lg:mb-10">Pedidos & <strong>Clientes</strong></h1>
                 <div className="flex justify-center items-center flex-col lg:flex-row auto-cols-3">
                     <ClientCard
