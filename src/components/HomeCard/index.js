@@ -105,18 +105,25 @@ const HomeCard = ({ className }) => {
                             <>
                                 <div className="flex flex-col justify-center items-center">
                                     <form method="POST" action="https://fluxodigital12.activehosted.com/proc.php" novalidate>
+                                        <input type="hidden" name="u" value="1" />
+                                        <input type="hidden" name="f" value="1" />
+                                        <input type="hidden" name="s" />
+                                        <input type="hidden" name="c" value="0" />
+                                        <input type="hidden" name="m" value="0" />
+                                        <input type="hidden" name="act" value="sub" />
+                                        <input type="hidden" name="v" value="2" />
                                         <div className="flex flex-col justify-center items-center">
                                             <div className="flex flex-col">
                                                 <label htmlFor="field[1]" >Perfil do Instagram:</label>
-                                                <input name="field[1]" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                                <input name="field[1]" id="field[1]" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
                                             <div className="flex flex-col mt-3">
                                                 <label htmlFor="firstname" >Nome:</label>
-                                                <input name="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                                <input name="firstname" id="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
                                             <div className="flex flex-col mt-3 mb-6">
                                                 <label htmlFor="email" >E-mail:</label>
-                                                <input name="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
+                                                <input name="email" id="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
                                             </div>
                                         </div>
                                         <div className="flex justify-center mt-6 mb-6">
