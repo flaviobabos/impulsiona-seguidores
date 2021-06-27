@@ -16,7 +16,7 @@ const CardContainer = ({ className }) => {
                             <strong>20 mil clientes</strong>,
                             " ativos espalhados pelo Brasil",
                         ]}
-                        key={1}
+                        key="1"
                     />
                     <ClientCard
                         number={"27000"}
@@ -26,7 +26,7 @@ const CardContainer = ({ className }) => {
                             <strong>27 mil pedidos</strong>,
                             " de seguidores e curtidas para os perfis de nossos clientes!",
                         ]}
-                        key={2}
+                        key="2"
                     />
                     <ClientCard
                         number={"950000"}
@@ -35,7 +35,7 @@ const CardContainer = ({ className }) => {
                             "Hoje nossa conta de seguidores brasileiros e mundiais entregues está em quase ",
                             <strong>1 milhão!</strong>,
                         ]}
-                        key={3}
+                        key="3"
                     />
                 </div>
             </div>
