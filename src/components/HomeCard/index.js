@@ -114,7 +114,7 @@ const HomeCard = ({ className }) => {
                                                 <label htmlFor="firstname" >Nome:</label>
                                                 <input name="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
-                                            <div className="flex flex-col mt-3">
+                                            <div className="flex flex-col mt-3 mb-6">
                                                 <label htmlFor="email" >E-mail:</label>
                                                 <input name="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
                                             </div>
