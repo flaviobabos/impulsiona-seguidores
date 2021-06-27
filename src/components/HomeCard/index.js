@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Slider from "react-input-slider";
 import style from "./styles";
-import CardPopup from '../CardPopup'
-
+import Advantages from "../Advantages"
 
 
 const HomeCard = ({ className }) => {
@@ -15,6 +14,7 @@ const HomeCard = ({ className }) => {
                 "De quantos seguidores você precisa?",
                 "De quantas curtidas você precisa?",
                 "De quantas curtidas e seguidores você precisa?",
+                "Para começar, deixe-nos verificar seu instagram"
             ],
         },
         {
@@ -50,16 +50,9 @@ const HomeCard = ({ className }) => {
     ];
 
     let [actualTitle, setTitle] = useState(products[0].titles[0]);
-    let [openPopup, setOpenPopup] = useState(false);
+    let [futureTitle, setFutureTitle] = useState(products[0].titles[0]);
 
-    useEffect(() => {
-        if (actualTitle !== "No que podemos te ajudar?") {
-            setOpenPopup(true);
-        }
-        else {
-            setOpenPopup(false);
-        };
-    }, [actualTitle]);
+
     return (
         <>
             <div className={className}>
@@ -85,22 +78,21 @@ const HomeCard = ({ className }) => {
                         {actualTitle === products[0].titles[0] && (
                             <>
 
-                                <CardPopup openPopup={true} />
                                 <button
-                                    onClick={() => setTitle(products[0].titles[1])}
+                                    onClick={() => { setTitle(products[0].titles[4]); setFutureTitle(products[0].titles[1]) }}
                                     className="btn text-white mb-5"
                                 >
                                     Seguidores
                 </button>
 
                                 <button
-                                    onClick={() => setTitle(products[0].titles[2])}
+                                    onClick={() => { setTitle(products[0].titles[4]); setFutureTitle(products[0].titles[2]) }}
                                     className="btn text-white mb-5"
                                 >
                                     Curtidas
                 </button>
                                 <button
-                                    onClick={() => setTitle(products[0].titles[3])}
+                                    onClick={() => { setTitle(products[0].titles[4]); setFutureTitle(products[0].titles[3]) }}
                                     className="btn text-white mb-5"
                                 >
                                     Seguidores <br></br>e Curtidas
@@ -108,6 +100,35 @@ const HomeCard = ({ className }) => {
 
                             </>
                         )}
+
+                        {actualTitle === products[0].titles[4] &&
+                            <>
+                                <div className="flex flex-col justify-center items-center">
+                                    <form method="POST" action="https://fluxodigital12.activehosted.com/proc.php" novalidate>
+                                        <div className="flex flex-col justify-center items-center">
+                                            <div className="flex flex-col">
+                                                <label htmlFor="field[1]" >Perfil do Instagram:</label>
+                                                <input name="field[1]" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                            </div>
+                                            <div className="flex flex-col mt-3">
+                                                <label htmlFor="firstname" >Nome:</label>
+                                                <input name="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                            </div>
+                                            <div className="flex flex-col mt-3">
+                                                <label htmlFor="email" >E-mail:</label>
+                                                <input name="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-center mt-6 mb-6">
+                                            <button type="submit" className="btn text-white">Verificar</button>
+                                        </div>
+                                        <div className="flex justify-center mt-6 mb-6">
+                                            <button onClick={() => setTitle(futureTitle)} className="btn-inverse text-pink">Pular Verificação</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </>
+                        }
 
                         {actualTitle === products[0].titles[1] && (
                             <>
@@ -232,132 +253,8 @@ const HomeCard = ({ className }) => {
                                 </div>
                             </>
                         )}
-                        {actualTitle !== products[0].titles[0] && (
-                            <>
-                                <div className="flex mt-7 mb-2 items-start ">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="#00CD00"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        display="block"
-                                        id="DoubleCheck"
-                                    >
-                                        <path d="M2 12l5.25 5 2.625-3" />
-                                        <path d="M8 12l5.25 5L22 7" />
-                                        <path d="M16 7l-3.5 4" />
-                                    </svg>
-                                    <p className="text-link ml-2 texto">
-                                        Seguidores <strong className="text-link">Reais</strong> e{" "}
-                                        <strong className="text-link">Brasileiros</strong>
-                                    </p>
-                                </div>
-                                <div className="flex mb-2 items-center ">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="#00CD00"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        display="block"
-                                        id="DoubleCheck"
-                                    >
-                                        <path d="M2 12l5.25 5 2.625-3" />
-                                        <path d="M8 12l5.25 5L22 7" />
-                                        <path d="M16 7l-3.5 4" />
-                                    </svg>
-                                    <p className="text-link ml-2 texto">
-                                        Quantidade <strong className="text-link">garantida</strong>{" "}
-                    na assinatura
-                  </p>
-                                </div>
-                                <div className="flex mb-2 items-center">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="#00CD00"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        display="block"
-                                        id="DoubleCheck"
-                                    >
-                                        <path d="M2 12l5.25 5 2.625-3" />
-                                        <path d="M8 12l5.25 5L22 7" />
-                                        <path d="M16 7l-3.5 4" />
-                                    </svg>
-                                    <p className="text-link ml-2 texto">
-                                        Reposição <strong className="text-link">automática</strong>{" "}
-                    de seguidores
-                  </p>
-                                </div>
-                                <div className="flex mb-2 items-center">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="#00CD00"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        display="block"
-                                        id="DoubleCheck"
-                                    >
-                                        <path d="M2 12l5.25 5 2.625-3" />
-                                        <path d="M8 12l5.25 5L22 7" />
-                                        <path d="M16 7l-3.5 4" />
-                                    </svg>
-                                    <p className="text-link ml-2 texto">
-                                        Atendimento via{" "}
-                                        <strong className="text-link">e-mail</strong> e{" "}
-                                        <strong className="text-link">WhatsApp</strong>
-                                    </p>
-                                </div>
-                                <div className="flex mb-2 items-center">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="#00CD00"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        display="block"
-                                        id="DoubleCheck"
-                                    >
-                                        <path d="M2 12l5.25 5 2.625-3" />
-                                        <path d="M8 12l5.25 5L22 7" />
-                                        <path d="M16 7l-3.5 4" />
-                                    </svg>
-                                    <p className="text-link ml-2 texto">
-                                        Cancelamento a{" "}
-                                        <strong className="text-link">qualquer momento</strong>
-                                    </p>
-                                </div>
-                                <div className="flex mb-3 mt-4 items-center">
-                                    <p className="text-link ml-2 texto">
-                                        <strong className="text-pink">Atenção:</strong> Seu{" "}
-                                        <strong className="text-pink">perfil</strong> precisa estar{" "}
-                                        <strong className="text-pink">público</strong>
-                                    </p>
-                                </div>
-                            </>
+                        {(actualTitle === products[0].titles[1] || actualTitle === products[0].titles[2] || actualTitle === products[0].titles[3]) && (
+                            <Advantages />
                         )}
                         {actualTitle === products[0].titles[1] && (
                             <div className="flex justify-center items-center flex-col mt-5">
