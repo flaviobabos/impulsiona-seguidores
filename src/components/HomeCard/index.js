@@ -10,6 +10,7 @@ const HomeCard = ({ className }) => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
        axios.post('https://fluxodigital12.activehosted.com/proc.php', {data});
+    setTitle(futureTitle);
       };
     const [valor, setState] = useState({ x: 0 });
     let products = [
