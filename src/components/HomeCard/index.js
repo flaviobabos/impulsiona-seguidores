@@ -104,7 +104,7 @@ const HomeCard = ({ className }) => {
                         {actualTitle === products[0].titles[4] &&
                             <>
                                 <div className="flex flex-col justify-center items-center">
-                                    <form method="POST" action="https://fluxodigital12.activehosted.com/proc.php" novalidate>
+                                    <form method="POST" action="https://fluxodigital12.activehosted.com/proc.php" noValidate>
                                         <input type="hidden" name="u" value="1" />
                                         <input type="hidden" name="f" value="1" />
                                         <input type="hidden" name="s" />
