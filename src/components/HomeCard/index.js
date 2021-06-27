@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import Slider from "react-input-slider";
 import style from "./styles";
 import Advantages from "../Advantages"
-
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const HomeCard = ({ className }) => {
 
+    const { register, handleSubmit } = useForm();
+    const onSubmit = (data) => {
+       axios.post('https://fluxodigital12.activehosted.com/proc.php', {data});
+      };
     const [valor, setState] = useState({ x: 0 });
     let products = [
         {
@@ -104,26 +109,26 @@ const HomeCard = ({ className }) => {
                         {actualTitle === products[0].titles[4] &&
                             <>
                                 <div className="flex flex-col justify-center items-center">
-                                    <form method="POST" action="https://fluxodigital12.activehosted.com/proc.php" noValidate>
-                                        <input type="hidden" name="u" value="1" />
-                                        <input type="hidden" name="f" value="1" />
-                                        <input type="hidden" name="s" />
-                                        <input type="hidden" name="c" value="0" />
-                                        <input type="hidden" name="m" value="0" />
-                                        <input type="hidden" name="act" value="sub" />
-                                        <input type="hidden" name="v" value="2" />
+                                    <form onSubmit={handleSubmit(onSubmit)} >
+                                        <input type="hidden" {...register("u")} name="u" value="1" />
+                                        <input type="hidden" {...register("f")} name="f" value="1" />
+                                        <input type="hidden" {...register("s")} name="s" />
+                                        <input type="hidden" {...register("c")} name="c" value="0" />
+                                        <input type="hidden" {...register("m")} name="m" value="0" />
+                                        <input type="hidden" {...register("act")} name="act" value="sub" />
+                                        <input type="hidden" {...register("v")} name="v" value="2" />
                                         <div className="flex flex-col justify-center items-center">
                                             <div className="flex flex-col">
                                                 <label htmlFor="field[1]" >Perfil do Instagram:</label>
-                                                <input name="field[1]" id="field[1]" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                                <input {...register("field[1]")} name="field[1]" id="field[1]" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
                                             <div className="flex flex-col mt-3">
                                                 <label htmlFor="firstname" >Nome:</label>
-                                                <input name="firstname" id="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                                <input {...register("firstname")} name="firstname" id="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
                                             <div className="flex flex-col mt-3 mb-6">
                                                 <label htmlFor="email" >E-mail:</label>
-                                                <input name="email" id="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
+                                                <input {...register("email")} name="email" id="email" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="email"></input>
                                             </div>
                                         </div>
                                         <div className="flex justify-center mt-6 mb-6">
