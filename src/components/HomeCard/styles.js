@@ -97,6 +97,31 @@ line-height: 29px;
 letter-spacing: 0em;
 }
 
+.ribbon-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+
+    width: 150px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.ribbon{
+    background-color: #FF0000D6;
+    text-align: center;
+    left: 0;
+    width: 200%;
+    -webkit-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    -ms-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    margin-top: 35px;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 `;
 

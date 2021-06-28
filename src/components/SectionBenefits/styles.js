@@ -16,8 +16,14 @@ const style = (Component) => styled(Component)`
     text-align: center;
   }
 
+h3{
+  font-size:22px;
+}
+  p{
+    font-size:20px;
+  }
   .card{
-      width:200px;
+      width:250px;
   }
 
 `;
