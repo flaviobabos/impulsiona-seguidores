@@ -7,6 +7,7 @@ import SectionAbout from '../components/SectionAbout'
 import SectionContact from '../components/SectionContact'
 import SectionBenefits from '../components/SectionBenefits'
 import SectionHome from '../components/SectionHome'
+import FloatingButtons from '../components/FloatingButtons'
 
 export default function Index() {
 
@@ -14,6 +15,7 @@ export default function Index() {
     return (
         <Layout>
             <Header />
+            <FloatingButtons />
             <SectionHome />
             <SectionAbout />
             <SectionBenefits />
