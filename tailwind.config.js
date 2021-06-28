@@ -17,12 +17,20 @@ module.exports = {
             },
             backgroundImage: {
                 'gradient': 'linear-gradient(23.07deg, #575CCC -4.4%, #F2295B 100%);'
-            }
+            },
         },
         colors: {
             green: '#00CD00',
             black: '#000',
             white: '#FFF',
+        },
+        borderColor: {
+            'link': '#575CCC',
+            'black': '#000',
+            'green': '#00CD00',
+            'white': '#FFF',
+            'pink': '#F2295B',
+            'grey': '#F6F6F6'
         }
     },
     variants: {
