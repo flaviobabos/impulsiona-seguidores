@@ -48,7 +48,7 @@ const Header = ({ className }) => {
 
                         </Link>
                     </div>
-                    <div className="flex w-full justify-end lg:justify-center">
+                    <div className="flex wrap w-full justify-end lg:justify-center">
                         <button className="mr-5 lg:hidden" onClick={() => setshowMenu(!showMenu)}>
                             <ThreeLineHorizontal color={"#00CD00"} size={40} />
                         </button>
