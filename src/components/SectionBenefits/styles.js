@@ -23,7 +23,7 @@ h3{
     font-size:20px;
   }
   .card{
-      width:200px;
+      width:250px;
   }
 
 `;
