@@ -68,6 +68,10 @@ const HomeCard = ({ className }) => {
                         }`}
                 >
                     <div className="bg-blue block top-0 rounded-t-lg w-full h-20 mb-5">
+                        {valor.x === 2 &&
+                        <div className="ribbon-container text-white">
+                            <h5 className="ribbon" >POPULAR</h5>
+                        </div>}
                         <h2
                             className={`text-white px-4 text-center ${
                                 actualTitle === products[0].titles[0] ? "pt-6" : "pt-3 lg:pt-6"
@@ -275,7 +279,7 @@ const HomeCard = ({ className }) => {
                                     <button className="btn text-white mb-5">Contratar</button>
                                 </a>
                                 <button
-                                    onClick={() => setTitle(products[0].titles[0])}
+                                    onClick={() => {setTitle(products[0].titles[0]);valor.x=0}}
                                     className="btn-inverse text-pink mb-5"
                                 >
                                     Voltar
