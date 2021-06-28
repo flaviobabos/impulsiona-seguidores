@@ -26,6 +26,7 @@ const HomeCard = ({ className }) => {
         {
             followers: ["1000", "1500", "3000", "6000"],
             followersprices: ["55,90", "75,90", "145,90", "279,90"],
+            anchorprice:["177","337"],
             followerslinks: [
                 "http://mon.net.br/17s8xk",
                 "http://mon.net.br/17s8xl",
@@ -36,6 +37,7 @@ const HomeCard = ({ className }) => {
         {
             likes: ["25", "50", "100", "200"],
             likesprices: ["25,90", "45,90", "84,90", "159,90"],
+            anchorprice:["107","197"],
             linkslikes: [
                 "http://mon.net.br/17s8xv",
                 "http://mon.net.br/17s8xx",
@@ -46,6 +48,7 @@ const HomeCard = ({ className }) => {
         {
             combos: ["1000", "1500", "3000", "6000"],
             combosprices: ["89,90", "125,90", "249,90", "489,90"],
+            anchorprice:["307","587"],
             linkscombos: [
                 "http://mon.net.br/17s8y3",
                 "http://mon.net.br/17s8y4",
@@ -177,6 +180,12 @@ const HomeCard = ({ className }) => {
                                         onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
                                     />
                                     <div className="flex flex-row mt-6 lg:ml-6">
+                                    {(valor.x === 2 || valor.x === 3) &&
+                                        <div className="flex">
+                                        <h5 className=" line-through text-black text-opacity-60">R${products[1].anchorprice[valor.x - 2]}
+                                        </h5>
+</div>
+                                         }
                                         <h6 className="flex items-center mr-2">R$</h6>
                                         <h3 className="flex items-center">
                                             {products[1].followersprices[valor.x]}
@@ -217,6 +226,12 @@ const HomeCard = ({ className }) => {
                                         onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
                                     />
                                     <div className="flex flex-row mt-6 lg:ml-6">
+                                        {(valor.x === 2 || valor.x === 3) &&
+                                        <div className="flex">
+                                        <h5 className=" line-through text-black text-opacity-60">R${products[2].anchorprice[valor.x - 2]}
+                                        </h5>
+</div>
+                                         }
                                         <h6 className="flex items-center mr-2">R$</h6>
                                         <h3 className="flex items-center">
                                             {products[2].likesprices[valor.x]}
@@ -260,6 +275,12 @@ const HomeCard = ({ className }) => {
                                         onChange={({ x }) => setState((valor) => ({ ...valor, x }))}
                                     />
                                     <div className="flex flex-row mt-6">
+                                    {(valor.x === 2 || valor.x === 3) &&
+                                        <div className="flex">
+                                        <h5 className=" line-through text-black text-opacity-60">R${products[3].anchorprice[valor.x - 2]}
+                                        </h5>
+</div>
+                                         }
                                         <h6 className="flex items-center mr-2">R$</h6>
                                         <h3 className="flex items-center">
                                             {products[3].combosprices[valor.x]}
@@ -292,7 +313,7 @@ const HomeCard = ({ className }) => {
                                     <button className="btn text-white mb-5">Contratar</button>
                                 </a>
                                 <button
-                                    onClick={() => setTitle(products[0].titles[0])}
+                                    onClick={() => {setTitle(products[0].titles[0]);valor.x=0}}
                                     className="btn-inverse text-pink mb-5"
                                 >
                                     Voltar
@@ -305,7 +326,7 @@ const HomeCard = ({ className }) => {
                                     <button className="btn text-white mb-5">Contratar</button>
                                 </a>
                                 <button
-                                    onClick={() => setTitle(products[0].titles[0])}
+                                    onClick={() => {setTitle(products[0].titles[0]);valor.x=0}}
                                     className="btn-inverse text-pink mb-5"
                                 >
                                     Voltar
