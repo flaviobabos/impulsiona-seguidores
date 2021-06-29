@@ -28,7 +28,7 @@ const sectionWarranty = ({ className }) => {
                     </div>
                     <div className="container lg:px-30 xl:px-40">
                      
-                    <LazyLoad true /*if set to once, the performance goes down a bit, but it's better for the user.*/>
+                    <LazyLoad once /*if set to true, the performance goes up a bit, but this is better for the user.*/>
                     <YouTube
   videoId={"XxeOdkmAgYY"}                  // defaults -> null
   className={"mx-auto w-full h-96"}                // defaults -> null
