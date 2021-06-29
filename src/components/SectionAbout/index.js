@@ -2,6 +2,7 @@ import React from "react";
 import style from "./styles";
 import {DoubleCheck } from 'akar-icons';
 import YouTube from 'react-youtube';
+import LazyLoad from 'react-lazyload';
 
 
 const sectionWarranty = ({ className }) => {
@@ -26,11 +27,12 @@ const sectionWarranty = ({ className }) => {
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">ficar online</strong> o dia todo</p>
                     </div>
                     <div className="container lg:px-30 xl:px-40">
+                    <LazyLoad once>
                     <YouTube
   videoId={"XxeOdkmAgYY"}                  // defaults -> null
   className={"mx-auto w-full h-96"}                // defaults -> null
-
 />
+</LazyLoad>
                     </div>
                 </section>
             </div>
