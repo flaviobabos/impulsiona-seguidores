@@ -15,11 +15,11 @@ const sectionWarranty = ({ className }) => {
                         <DoubleCheck className="text-green w-16" size={32} />
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">seguir de volta</strong></p>
                     </div>
-                    <div className="flex mb-3 lg:justify-center">
+                    <div className="flex mb-3 justify-center">
                         <DoubleCheck className="text-green w-16" size={32} />
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">informar sua senha</strong> do Instagram</p>
                     </div>
-                    <div className="flex mb-10 lg:justify-center">
+                    <div className="flex mb-10 justify-center">
                         <DoubleCheck className="text-green w-16" size={32} />
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">ficar online</strong> o dia todo</p>
                     </div>
