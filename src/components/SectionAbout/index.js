@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./styles";
 import {DoubleCheck } from 'akar-icons';
+import YouTube from 'react-youtube';
+
 
 const sectionWarranty = ({ className }) => {
     return (
@@ -24,7 +26,11 @@ const sectionWarranty = ({ className }) => {
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">ficar online</strong> o dia todo</p>
                     </div>
                     <div className="container lg:px-30 xl:px-40">
-                        <iframe className="mx-auto" width="100%" height="350px" src="https://www.youtube.com/embed/XxeOdkmAgYY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <YouTube
+  videoId={"XxeOdkmAgYY"}                  // defaults -> null
+  className={"mx-auto w-full h-96"}                // defaults -> null
+
+/>
                     </div>
                 </section>
             </div>
