@@ -27,7 +27,8 @@ const sectionWarranty = ({ className }) => {
                         <p className="text-white normal ml-4">Sem precisar <strong className="text-white">ficar online</strong> o dia todo</p>
                     </div>
                     <div className="container lg:px-30 xl:px-40">
-                    <LazyLoad true>
+                     
+                    <LazyLoad true /*if set to once, the performance goes down a bit, but it's better for the user.*/>
                     <YouTube
   videoId={"XxeOdkmAgYY"}                  // defaults -> null
   className={"mx-auto w-full h-96"}                // defaults -> null
