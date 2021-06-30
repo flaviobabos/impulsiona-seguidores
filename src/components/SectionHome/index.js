@@ -12,6 +12,7 @@ const sectionHome = ({ className }) => {
                 <section className="h-full w-full bg-grey px-10 lg:px-52 home" >
                     <img
                         className="flex pt-7 lg:hidden mx-auto h-24"
+                        style={{height: "6rem"}}
                         src={logo}
                         alt="logo original"
                     ></img>

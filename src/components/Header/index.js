@@ -35,10 +35,10 @@ const Header = ({ className }) => {
                     <div className="ml-5">
                         <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} offset={-80} >
                             <button className="lg:hidden">
-                                <img alt="logo" className="h-14" src={logo}></img>
+                                <img alt="logo" style={{height: "3.5rem"}} className="h-14" src={logo}></img>
                             </button>
                             <button className="hidden lg:block">
-                                <img alt="logo" className="h-14" src={logo_desk}></img>
+                                <img alt="logo" style={{height: "3.5rem"}}  className="h-14" src={logo_desk}></img>
                             </button>
 
                         </Link>

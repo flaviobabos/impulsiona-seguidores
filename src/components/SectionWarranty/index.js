@@ -10,6 +10,7 @@ const sectionWarranty = ({ className }) => {
                     <h3 className="titulo text-white block mx-auto pt-6 mb-5">Ainda em<strong className="titulo-strong">&nbsp;dúvida?</strong></h3>
                     <img
                         className="flex mx-auto h-48 mb-10"
+                        style={{height: "12rem"}}
                         src={warranty}
                         alt="7 dias de garantia"
                     ></img>

@@ -7,7 +7,7 @@ const Footer = ({ className }) => (
     <div className={className}>
       <div className="h-64 bg-black flex items-center justify-items-center">
         <div className="grid-rows-2 mx-auto">
-          <img className="h-16" alt="seguranca do site" src={img}></img>
+          <img className="h-16" style={{height: "4rem"}} alt="seguranca do site" src={img}></img>
           <h5 className="text-center text-white text-lg mt-5">
             Impulsiona Seguidores - 2021
           </h5>
