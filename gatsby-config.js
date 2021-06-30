@@ -11,6 +11,9 @@ module.exports = {
             options: {
               url: `http://impulsionacms.articadev.com/graphql`,
             },
+            includedRoutes: [
+                "**/paginas"
+            ],
         }
     ],
 };

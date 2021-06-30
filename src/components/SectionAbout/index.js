@@ -3,9 +3,26 @@ import style from "./styles";
 import {DoubleCheck } from 'akar-icons';
 import YouTube from 'react-youtube';
 import LazyLoad from 'react-lazyload';
+import { useStaticQuery, graphql } from "gatsby"
 
 
-const sectionWarranty = ({ className }) => {
+const SectionWarranty = ({ className }) => {
+
+    const data = useStaticQuery(graphql`
+    query {
+        allWpPagina {
+          edges {
+            node {
+              id
+              camposDaPaginaInicial{
+                youtubeId
+              }
+            }
+          }
+        }
+      }    
+  `)
+
     return (
         <>
             <div className={className}>
@@ -30,7 +47,7 @@ const sectionWarranty = ({ className }) => {
                      
                     <LazyLoad once /*if set to true, the performance goes up a bit, but this is better for the user.*/>
                     <YouTube
-  videoId={"XxeOdkmAgYY"}                  // defaults -> null
+  videoId={data.allWpPagina.edges[0].node.camposDaPaginaInicial.youtubeId}                  // defaults -> null
   className={"mx-auto w-full h-96"}                // defaults -> null
 />
 </LazyLoad>
@@ -42,4 +59,4 @@ const sectionWarranty = ({ className }) => {
     );
 };
 
-export default style(sectionWarranty);
+export default style(SectionWarranty);
