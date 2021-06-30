@@ -71,7 +71,7 @@ const HomeCard = ({ className }) => {
                         }`}
                 >
                     <div className="bg-blue block top-0 rounded-t-lg w-full h-20 mb-5">
-                        {valor.x === 2 &&
+                        {(valor.x === 2 && actualTitle !== products[0].titles[0] && actualTitle !== products[0].titles[4] ) &&
                         <div className="ribbon-container text-white">
                             <h5 className="ribbon" >POPULAR</h5>
                         </div>}
