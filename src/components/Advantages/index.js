@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./styles";
 
-const Advantages = ({ className }) => {
+const Advantages = ({ className, text }) => {
     return (
         <>
             <div className="flex mt-7 mb-2 items-start ">
@@ -23,8 +23,8 @@ const Advantages = ({ className }) => {
                     <path d="M16 7l-3.5 4" />
                 </svg>
                 <p className="text-link ml-2 texto">
-                    Seguidores <strong className="text-link">Reais</strong> e{" "}
-                    <strong className="text-link">Brasileiros</strong>
+                    {text[0]} <strong className="text-link">Reais</strong> e{" "}
+                    <strong className="text-link">{text[1]}</strong>
                 </p>
             </div>
             <div className="flex mb-2 items-center ">

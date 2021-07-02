@@ -299,7 +299,12 @@ const HomeCard = ({ className }) => {
                         )}
                         {(actualTitle === products[0].titles[1] || actualTitle === products[0].titles[2] || actualTitle === products[0].titles[3]) && (
                             <>
-                            <Advantages />
+                            {(actualTitle === products[0].titles[1] || actualTitle === products[0].titles[3] )&&
+                            <Advantages text={["Seguidores","Brasileiros"]}/>
+                        }
+                            {actualTitle === products[0].titles[2] &&
+                            <Advantages text={["Curtidas","Brasileiras"]}/>
+                        }
                             <div className="flex justify-center items-center flex-col mt-5">
                                     <button
                                      onClick={() => setTitle(products[0].titles[4])}
