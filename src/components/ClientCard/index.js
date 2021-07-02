@@ -2,7 +2,7 @@ import React from "react";
 import style from "./styles";
 import CountUp from "react-countup";
 
-const ClientCard = ({ className, number, name, desc }) => {
+const ClientCard = ({ className, number, name, desc, duration }) => {
     let numero = Number(number);
     return (
         <>
@@ -12,7 +12,7 @@ const ClientCard = ({ className, number, name, desc }) => {
                         <div className="flex justify-center mb-4">
                             <CountUp
                                 end={numero}
-                                duration={3}
+                                duration={duration}
                                 suffix={"+"}
                                 className={"texto-vermelho"}
                             />
