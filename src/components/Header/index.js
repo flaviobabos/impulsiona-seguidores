@@ -3,6 +3,7 @@ import style from "./styles";
 import { Helmet } from "react-helmet";
 import logo from "../../images/logo.png";
 import logo_desk from "../../images/logo_desk.png";
+import icon from "../../images/favicon.png";
 import { ThreeLineHorizontal } from 'akar-icons';
 import { Link } from 'react-scroll';
 import { useSpring, animated, useSpringRef, useChain } from 'react-spring'
@@ -28,7 +29,7 @@ const Header = ({ className }) => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Impulsiona Seguidores</title>
-                <link rel="shortcut icon" href="impulsiona-seguidores\src\images\favicon.png" />
+                <link rel="shortcut icon" href={icon} />
             </Helmet>
             <nav className="h-20 bg-black sticky top-0 z-10">
                 <div className="container-fluid h-full flex items-center ">
