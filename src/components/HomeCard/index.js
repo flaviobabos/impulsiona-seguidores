@@ -15,7 +15,7 @@ const HomeCard = ({ className }) => {
        axios.post('https://fluxodigital12.api-us1.com/admin/api.php', {data}, 
             {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }})
        .then((response) => { console.log(response) });
-       window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x]);
+      // window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x]);
 
       };
     const [valor, setState] = useState({ x: 0 });
