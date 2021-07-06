@@ -12,7 +12,8 @@ const HomeCard = ({ className }) => {
 
        data['api_action'] = 'contact_sync';
        data['api_key'] = process.env.GATSBY_ACTIVE_CAMPAIGN_KEY;
-       axios.post('https://fluxodigital12.api-us1.com/admin/api.php', {data})
+       axios.post('https://fluxodigital12.api-us1.com/admin/api.php', {data}, 
+            {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }})
        .then((response) => { console.log(response) });
        window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x]);
 
