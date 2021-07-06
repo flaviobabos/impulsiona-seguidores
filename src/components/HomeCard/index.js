@@ -9,8 +9,12 @@ const HomeCard = ({ className }) => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-       axios.post('https://fluxodigital12.activehosted.com/proc.php', {data});
-    window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x]);
+
+       data['api_action'] = 'contact_sync';
+       data['api_key'] = process.env.GATSBY_ACTIVE_CAMPAIGN_KEY;
+       axios.post('https://fluxodigital12.api-us1.com/admin/api.php', {data})
+       .then((response) => { console.log(response) });
+       window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x]);
 
       };
     const [valor, setState] = useState({ x: 0 });
@@ -118,13 +122,6 @@ const HomeCard = ({ className }) => {
                             <>
                                 <div className="flex flex-col justify-center items-center">
                                     <form onSubmit={handleSubmit(onSubmit)} >
-                                        <input type="hidden" {...register("u")} name="u" value="1" />
-                                        <input type="hidden" {...register("f")} name="f" value="1" />
-                                        <input type="hidden" {...register("s")} name="s" />
-                                        <input type="hidden" {...register("c")} name="c" value="0" />
-                                        <input type="hidden" {...register("m")} name="m" value="0" />
-                                        <input type="hidden" {...register("act")} name="act" value="sub" />
-                                        <input type="hidden" {...register("v")} name="v" value="2" />
                                         <div className="flex flex-col justify-center items-center">
                                             <div className="flex flex-col">
                                                 <label htmlFor="field[1]" >Perfil do Instagram:</label>
@@ -132,7 +129,7 @@ const HomeCard = ({ className }) => {
                                             </div>
                                             <div className="flex flex-col mt-3">
                                                 <label htmlFor="firstname" >Nome:</label>
-                                                <input {...register("firstname")} name="firstname" id="firstname" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
+                                                <input {...register("first_name")} name="first_name" id="first_name" className="w-60 mt-1 border-link border-opacity-25 focus:border-opacity-75 border-2 " required type="text"></input>
                                             </div>
                                             <div className="flex flex-col mt-3 mb-6">
                                                 <label htmlFor="email" >E-mail:</label>
