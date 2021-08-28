@@ -306,7 +306,7 @@ const HomeCard = ({ className }) => {
                         }
                             <div className="flex justify-center items-center flex-col mt-5">
                                     <button
-                                     onClick={() => setTitle(products[0].titles[4])}
+                                     onClick={() => window.location.replace(products[products[0].titles.indexOf(chosenTitle)].links[valor.x])}
                                     className="btn text-white mb-5">Contratar</button>
                                 <button
                                     onClick={() => {setTitle(products[0].titles[0]);valor.x=0}}
